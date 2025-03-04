@@ -35,7 +35,6 @@ def query_papers(query, top_k=3):
         return [], "No relevant papers found."
     
     cache_key = hashlib.sha256(query.encode()).hexdigest()
-    
 
     context = "\n\n".join([doc.page_content for doc in docs])
     llm_input = f"Context: {context}\n\nQuestion: {query}"

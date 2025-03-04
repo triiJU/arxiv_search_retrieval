@@ -9,11 +9,13 @@ app_file: streamlitapp.py
 short_description: ArXiv research retrieval system
 
 
+
 Features:
 - Dynamic arXiv Paper Retrieval from all categories
 - AI-Powered Summaries using Mistral-7B (or LLaMA-2)
 - Fast Search & Storage via ChromaDB
 - Interactive UI built with Streamlit
+
 
 # Installation
 
@@ -22,6 +24,7 @@ git clone https://github.com/triiJU/arxivrag.git && cd arxivrag
 conda create -n arxiv-rag python=3.10 -y && conda activate arxiv-rag
 
 pip install -r requirements.txt
+
 
 # Usage
 
@@ -36,6 +39,7 @@ streamlit run streamlitapp.py
 ### Search & Generate Answers
 
 python query_chroma.py
+
 
 ## Example Queries
 |          Query         |          Expected Output       |

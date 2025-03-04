@@ -25,7 +25,6 @@ def get_all_categories():
     for link in soup.select("a[href^='/list/']"):
         category = link["href"].split("/")[-1]
         categories.append(category)
-    
     return categories
 
 def fetch_category_papers(category, max_results_per_category):
@@ -49,10 +48,8 @@ def fetch_all_arxiv_papers(max_results_per_category=5):
     
     with ThreadPoolExecutor(max_workers=10) as executor:
         results = executor.map(lambda cat: fetch_category_papers(cat, max_results_per_category), categories)
-    
     for paper_list in results:
         all_papers.extend(paper_list)
-    
     return all_papers
 
 def store_papers(papers):

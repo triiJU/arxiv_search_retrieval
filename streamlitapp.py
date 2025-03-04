@@ -17,7 +17,7 @@ if fetch_papers:
     st.sidebar.success("✅ Papers successfully fetched & stored!")
 
 # Search Query Section
-st.header("🔍 Search Research Papers")
+st.header(" Search Research Papers")
 query = st.text_input("Enter your research query:")
 top_k = st.slider("Number of results", min_value=1, max_value=10, value=3)
 search = st.button("Search")
@@ -33,5 +33,5 @@ if search and query:
     else:
         st.warning("No relevant papers found.")
     
-    st.subheader("🤖 AI-Generated Summary:")
+    st.subheader(" AI-Generated Summary:")
     st.write(response if response else "No summary available.")

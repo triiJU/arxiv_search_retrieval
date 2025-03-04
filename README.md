@@ -14,9 +14,9 @@ Features:
 # Installation
 
 git clone https://github.com/triiJU/arxivrag.git && cd arxivrag
-##
+
 conda create -n arxiv-rag python=3.10 -y && conda activate arxiv-rag
-##
+
 pip install -r requirements.txt
 
 # Usage

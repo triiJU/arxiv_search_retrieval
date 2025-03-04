@@ -1,7 +1,11 @@
 Arxiv-RAG: a retrieval-augmented generation (RAG) system that leverages **Mistral-7B & LLaMA-2** to search and summarize research papers from **arXiv**. It uses **ChromaDB** for efficient storage and retrieval.
+
 sdk: streamlit
+
 sdk_version: 5.20.0
+
 app_file: streamlitapp.py
+
 short_description: ArXiv research retrieval system
 
 

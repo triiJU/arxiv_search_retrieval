@@ -41,9 +41,12 @@ python query_chroma.py
 
 
 ## Troubleshooting
-pip check . 
-pip install --force-reinstall -r requirements.txt  .
-rm -rf chroma_db/ && python fetch_arxiv.py  . 
+pip check 
+
+pip install --force-reinstall -r requirements.txt  
+
+rm -rf chroma_db/ && python fetch_arxiv.py  
+
 
 
 ## License

@@ -1,14 +1,19 @@
 # Optimized ArXiv Paper Fetching & Indexing
 
-import os
+#Here this serves as the backend logic for my project
+
+
 import arxiv
 import chromadb
 import requests
 from concurrent.futures import ThreadPoolExecutor
-from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer
+from bs4 import BeautifulSoup
 
-os.makedirs("models", exist_ok=True)
+# Initializing - HuggingFace 
+embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+db = Chroma(persist_directory="chroma_db", embedding_function=embedding_model)
+
 
 chroma_client = chromadb.PersistentClient(path="chroma_db")
 collection = chroma_client.get_or_create_collection(name="arxiv_papers")
@@ -42,7 +47,7 @@ def fetch_category_papers(category, max_results_per_category):
     return papers
 
 def fetch_all_arxiv_papers(max_results_per_category=5):
-    """Fetch papers from all arXiv categories dynamically using multi-threading."""
+    """Fetch papers from all ArXiv categories dynamically using multi-threading."""
     categories = get_all_categories()
     all_papers = []
     
@@ -59,9 +64,3 @@ def store_papers(papers):
         collection.add(
             ids=[paper['title']], embeddings=[embedding], metadatas=[{"title": paper['title'], "url": paper['pdf_url']}]
         )
-    print("✅ All arXiv papers stored successfully!")
-
-if __name__ == "__main__":
-    max_results = int(input("Enter number of papers per category to fetch: ") or 5)
-    papers = fetch_all_arxiv_papers(max_results)
-    store_papers(papers)

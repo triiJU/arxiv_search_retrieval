@@ -16,7 +16,6 @@ accelerate
 optimum
 unstructured
 unstructured-inference
-unstructured[all-docs]
 pdfminer.six
 pi-heif
 pillow
@@ -26,3 +25,4 @@ pdf2image
 tiktoken
 fastapi
 uvicorn
+requests

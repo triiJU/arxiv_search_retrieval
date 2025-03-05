@@ -1,7 +1,7 @@
 #Frontend UI for interface interactions
 
 import streamlit as st
-from fetch_papers import fetch_all_arxiv_papers, store_papers
+from fetch_arxiv import fetch_all_arxiv_papers, store_papers
 from query_chroma import query_papers
 
 # Streamlit Page Configuration

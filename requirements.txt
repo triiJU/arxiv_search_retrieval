@@ -1,4 +1,4 @@
-# Core Libraries
+pysqlite3-binary
 torch
 scrapy
 arxiv
@@ -7,18 +7,16 @@ langchain-community
 chromadb
 huggingface_hub
 gradio
+streamlit
 
-# LLM Quantization & Optimization
 bitsandbytes
 accelerate
 optimum
 
-# Unstructured Data Processing
 unstructured
 unstructured-inference
 unstructured[all-docs]
 
-# PDF & Image Processing
 pdfminer.six
 pi-heif
 pillow
@@ -26,13 +24,10 @@ pymupdf
 pdfplumber
 pdf2image
 
-# Sentence Embeddings & Vector Storage
 sentence-transformers
 tiktoken
 
-# FastAPI (Optional, if using API)
+
 fastapi
 uvicorn
 
-# Streamlit (Required for deployment)
-streamlit

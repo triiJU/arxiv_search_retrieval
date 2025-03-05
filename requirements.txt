@@ -3,22 +3,19 @@ torch
 scrapy
 arxiv
 streamlit
-sentence-transformers
-transformers
+sentence-transformers==2.2.0  # Set specific version to avoid conflicts
+transformers==4.35.2  # Ensure compatibility with Sentence Transformers
 protobuf
 langchain-community
 chromadb
 huggingface_hub
 gradio
-
 bitsandbytes
 accelerate
 optimum
-
 unstructured
 unstructured-inference
 unstructured[all-docs]
-
 pdfminer.six
 pi-heif
 pillow
@@ -26,9 +23,6 @@ pymupdf
 pdfplumber
 pdf2image
 tiktoken
-
-
 fastapi
 uvicorn
 pysqlite3-binary
-

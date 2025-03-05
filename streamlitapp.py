@@ -3,16 +3,21 @@ import streamlit as st
 from fetch_arxiv import fetch_all_arxiv_papers, store_papers
 from query_chroma import query_papers
 import sys
-import pysqlite3
+
 sys.modules["sqlite3"] = pysqlite3
-import chromadb
+
+try:
+    import pysqlite3
+    sys.modules["sqlite3"] = pysqlite3
+except ImportError:
+    print("pysqlite3 not found. Ensure it's installed in requirements.txt.")
 
 os.environ["PYTHONWARNINGS"] = "ignore" 
 
 st.set_page_config(page_title="Arxiv-RAG", layout="wide")
 st.title("📚 Arxiv-RAG: AI-Powered Research Paper Search")
 
-
+import chromadb
 
 # Sidebar for Fetching New Papers
 st.sidebar.header("🔄 Fetch New Papers")

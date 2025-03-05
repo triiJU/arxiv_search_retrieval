@@ -13,7 +13,7 @@ db = Chroma(persist_directory="chroma_db", embedding_function=embedding_model)
 
 @st.cache_resource()
 def load_llm():
-    model_name = "mistralai/Mistral-7B-Instruct-v0.1"
+    model_name = "mistralai/Mistral-7B-Instruct-v0.3"
     print(f"Loading {model_name}...")
     
     model_path = os.path.join("models", model_name.replace("/", "_"))

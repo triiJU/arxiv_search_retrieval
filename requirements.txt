@@ -2,12 +2,13 @@ pysqlite3-binary>=0.5.4
 torch
 scrapy
 arxiv
+streamlit
+sentence-transformers
 transformers
 langchain-community
 chromadb
 huggingface_hub
 gradio
-streamlit
 
 bitsandbytes
 accelerate
@@ -23,8 +24,6 @@ pillow
 pymupdf
 pdfplumber
 pdf2image
-
-sentence-transformers
 tiktoken
 
 

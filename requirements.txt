@@ -1,14 +1,38 @@
-chromadb
-langchain
-langchain-community
-langchain-core
-requests
-streamlit
-sentence-transformers
-transformers
+# Core Libraries
 torch
+scrapy
 arxiv
-bs4
-pydantic
-uvicorn
+transformers
+langchain-community
+chromadb
+huggingface_hub
+gradio
+
+# LLM Quantization & Optimization
+bitsandbytes
+accelerate
+optimum
+
+# Unstructured Data Processing
+unstructured
+unstructured-inference
+unstructured[all-docs]
+
+# PDF & Image Processing
+pdfminer.six
+pi-heif
+pillow
+pymupdf
+pdfplumber
+pdf2image
+
+# Sentence Embeddings & Vector Storage
+sentence-transformers
+tiktoken
+
+# FastAPI (Optional, if using API)
 fastapi
+uvicorn
+
+# Streamlit (Required for deployment)
+streamlit

@@ -5,6 +5,7 @@ arxiv
 streamlit
 sentence-transformers
 transformers
+protobuf
 langchain-community
 chromadb
 huggingface_hub

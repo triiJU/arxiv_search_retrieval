@@ -9,6 +9,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 from sentence_transformers import SentenceTransformer
 from bs4 import BeautifulSoup
+from langchain.embeddings import HuggingFaceEmbeddings
 
 # Initializing - HuggingFace 
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")

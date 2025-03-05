@@ -1,4 +1,4 @@
-# Optimized ArXiv Paper Fetching & Indexing
+#Fetching & Indexing
 
 #Here this serves as the backend logic for my project
 

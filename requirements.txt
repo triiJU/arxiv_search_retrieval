@@ -1,12 +1,11 @@
-pip install --upgrade pip
-pysqlite3-binary>=0.5.4
+pysqlite3
 pycryptodome
 torch
 scrapy
 arxiv
 streamlit
-sentence-transformers==2.2.0  # Set specific version to avoid conflicts
-transformers==4.35.2  # Ensure compatibility with Sentence Transformers
+sentence-transformers
+transformers
 protobuf
 langchain-community
 chromadb
@@ -27,4 +26,3 @@ pdf2image
 tiktoken
 fastapi
 uvicorn
-pysqlite3-binary

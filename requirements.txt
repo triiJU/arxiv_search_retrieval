@@ -1,4 +1,3 @@
-pysqlite3-binary
 torch
 scrapy
 arxiv
@@ -30,4 +29,5 @@ tiktoken
 
 fastapi
 uvicorn
+pysqlite3-binary
 

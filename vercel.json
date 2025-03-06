@@ -1,8 +1,16 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "streamlitapp.py", "use": "@vercel/python" }
+    {
+      "src": "start.sh",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "public" }
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "streamlitapp.py" }
+    {
+      "src": "/(.*)",
+      "dest": "/public/index.html"
+    }
   ]
 }

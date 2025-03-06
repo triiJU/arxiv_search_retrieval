@@ -1,36 +1,36 @@
 # Core Libraries
-streamlit==1.30.0
-fastapi==0.115.1
-uvicorn==0.34.0
-requests==2.32.3
-flask==3.0.0
-gunicorn==21.2.0  # Required for production
+streamlit
+fastapi
+uvicorn
+requests
+flask
+gunicorn
 
 # Large Language Models (LLMs)
-transformers==4.49.0
-torch==2.6.0
-sentence-transformers==3.4.1
+transformers
+torch
+sentence-transformers
 
 # Vector Database (ChromaDB)
-chromadb==0.4.22  # Ensure ChromaDB uses the right SQLite version
+chromadb
 
 # arXiv API
-arxiv==2.1.3
+arxiv
 
 # Web Scraping & Data Processing
-beautifulsoup4==4.13.3
-scrapy==2.12.0
+beautifulsoup4
+scrapy
 
 # PDF & Unstructured Data Processing
-pdfminer.six==20240706
-pdfplumber==0.11.0
-unstructured[all-docs]==0.16.23
+pdfminer.six
+pdfplumber
+unstructured[all-docs]
 
 # Hugging Face Integration
-huggingface_hub==0.21.3
-gradio==5.20.0
-tiktoken==0.7.0
-langchain-community==0.3.19  # Downgrade from 0.3.20 to avoid errors
+huggingface_hub
+gradio
+tiktoken
+langchain-community
 
-# Fix SQLite version issue
-pysqlite3-binary==0.5.1
+# Database Fixes
+pysqlite3-binary

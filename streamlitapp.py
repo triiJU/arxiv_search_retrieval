@@ -1,5 +1,8 @@
 #Frontend UI for interface interactions
 
+import pysqlite3
+import sys
+sys.modules["sqlite3"] = pysqlite3
 import streamlit as st
 from fetch_arxiv import fetch_all_arxiv_papers, store_papers
 from query_chroma import query_papers

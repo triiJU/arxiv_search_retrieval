@@ -7,6 +7,11 @@ import streamlit as st
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from transformers import AutoTokenizer, AutoModelForCausalLM
+import sys
+import pysqlite3
+
+sys.modules["sqlite3"] = pysqlite3
+
 
 # Initialize ChromaDB with HuggingFace embeddings
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")

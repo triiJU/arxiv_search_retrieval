@@ -4,9 +4,7 @@
     "nixpacksPlan": {
       "phases": {
         "setup": {
-          "cmds": [
-            "apt-get update && apt-get install -y libgl1-mesa-glx"
-          ]
+          "nixPkgs": ["mesa", "mesa-dri-drivers", "libglvnd"]
         },
         "install": {
           "cmds": [

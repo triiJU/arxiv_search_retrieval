@@ -1,4 +1,8 @@
 {
-  "builds": [{ "src": "streamlitapp.py", "use": "@vercel/python" }],
-  "routes": [{ "src": "/(.*)", "dest": "streamlitapp.py" }]
+  "builds": [
+    { "src": "streamlitapp.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "streamlitapp.py" }
+  ]
 }

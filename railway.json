@@ -1,11 +1,25 @@
 {
   "build": {
-    "builder": "NIXPACKS",
+    "builder": "Nixpacks",
     "nixpacksPlan": {
-      "pkgs": ["python310"]
+      "phases": {
+        "setup": {
+          "cmds": [
+            "apt-get update && apt-get install -y libgl1-mesa-glx"
+          ]
+        },
+        "install": {
+          "cmds": [
+            "pip install -r requirements.txt"
+          ]
+        }
+      }
     }
   },
   "deploy": {
-    "startCommand": "streamlit run streamlitapp.py --server.port=$PORT --server.address=0.0.0.0"
+    "startCommand": "gunicorn app:app --bind 0.0.0.0:5000"
+  },
+  "envs": {
+    "HUGGINGFACE_API_KEY": "your_hf_token"
   }
 }

@@ -11,7 +11,6 @@ sentence-transformers==3.4.1
 
 # Vector Database (ChromaDB)
 chromadb==0.6.3
-pysqlite3-binary  # Fixes SQLite issues on Streamlit Cloud
 
 # arXiv API
 arxiv==2.1.3

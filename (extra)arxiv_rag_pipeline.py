@@ -1,8 +1,8 @@
 # import os
-# import torch
-# import scrapy
 # import arxiv
 # import chromadb
+# import torch
+# import scrapy
 # from scrapy.crawler import CrawlerProcess
 # from langchain_community.vectorstores import Chroma
 # from langchain_community.embeddings import HuggingFaceEmbeddings

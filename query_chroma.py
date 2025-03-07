@@ -1,5 +1,3 @@
-#Querying and answering
-
 import os
 import requests
 import json

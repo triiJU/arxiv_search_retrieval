@@ -1,6 +1,5 @@
 #Here this serves as the backend logic for my project
 
-
 import arxiv
 import chromadb
 import requests

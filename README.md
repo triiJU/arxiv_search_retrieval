@@ -6,7 +6,7 @@ short_description: ArXiv research retrieval system
 
 
 Features:
- - Dynamic arXiv Paper Retrieval – Fetch research papers across multiple categories in real time.
+ - Dynamic arXiv Paper Retrieval – Fetch research papers across multiple real-time categories.
  - AI-Powered Summaries – Leverages Mistral-7B / LLaMA-2 for intelligent summarization.
  - Vector-Based Search – Uses ChromaDB for fast and efficient research paper retrieval.
  - Interactive Web UI – Built with Streamlit for an intuitive search experience.
